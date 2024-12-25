@@ -1,0 +1,71 @@
+<!-- <?php  
+  $query = $pdo->query("select * from artical");
+  $results = $query->fetchAll(PDO::FETCH_ASSOC);
+?>
+ <ul>
+<?php foreach($results as $results): ?>
+    <a data-aid="<?= $record['a_id']; ?>" class="text-blue-500 ajexlink hover:underline" href="maintamplete.php?page=dashboard&add=artical&a_id=<?= $record['a_id']; ?>">
+    <?= $record['a_id']; ?> - <?= $record['title']; ?>
+    <?php endforeach ;?>
+ </ul>
+
+ <div>
+                        <div class="root"></div>
+                            <?php include 'like.php'; ?>
+                    </div>
+                     <script src="./ajex.js"> -->
+                
+                    <!-- </script>  -->
+
+
+                    <form action="" id="formdata" method="post">
+                      <label for=""></label>
+                      <div class="relative">
+                  
+                          <input type="search" id="searchbox" name="searchtitle">
+                          <div id="suggest" class="white absolute mb-">this is suggession</div>
+                      </div>
+                      <!-- <button type="submit">submit</button> -->
+                  </form>
+
+
+
+                  <form action="" id="formdata" method="post" class="w-full mt-8">
+                    <div class="relative">
+                        <input type="search" id="searchbox" name="searchtitle" placeholder="Search articles..."
+                            class="w-full p-3 text-gray-700 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent shadow-sm">
+                        
+                        <div id="suggest" class="absolute left-0 right-0 bg-white border border-gray-300 rounded-lg shadow-lg mt-2 hidden">
+                            <div class="p-4 text-gray-600">this is a suggestion</div>
+                        </div>
+                    </div>
+                </form>
+
+
+
+                // if($_SERVER['REQUEST_METHOD']== "post"){
+                    //  if(isset($_POST['name'])){
+                    //    if(isset($_POST['name'])==""){
+                    //       $error[]="Name is required";
+                    //    }
+                    //    $name=$_POST['name'];
+                    //  }
+                    //  if(isset($_POST['email'])){
+                    //    if(isset($_POST['email'])==""){
+                    //       if(mail($to,$email,$message, $header)){
+                    //          echo "email is send";
+                    //       }else{
+                    //          echo "email is not send";
+                    //       }
+                    //       $error[]="Email is required";
+                    //    }
+                    //    $email=$_POST['email'];
+                    //  }
+                    //  if(isset($_POST['message'])){
+                    //    if(isset($_POST['message'])==""){
+                    //       $error[]="Message is required";
+                    // }
+                    //    $message= $_POST['message'];
+                    //  }
+                    //  print($email);
+                    //  }
